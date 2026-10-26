@@ -1,0 +1,150 @@
+/* ==========================================================
+   VIBEVAULT — MOOD-ADAPTIVE DESIGN SYSTEM (themes.css)
+   Each mood transforms background, panels, sidebar, borders,
+   accents, text, active states, and decorative elements.
+========================================================== */
+
+/* 1. HAPPY ☀️ (Butter yellow, sunshine gold, lemon cream, warm ivory) */
+.theme-happy {
+  --page-bg: #fdfaf1;
+  --bg-image: url('/happy-bg.jpeg');
+  --bg-overlay: rgba(255, 252, 242, 0.88);
+  --panel-bg: rgba(255, 254, 248, 0.88);
+  --panel-bg-hover: rgba(255, 255, 252, 0.96);
+  --panel-glass: rgba(255, 253, 245, 0.78);
+  --sidebar-bg: rgba(254, 250, 235, 0.86);
+  --border-color: rgba(234, 179, 8, 0.32);
+  --border-focus: #eab308;
+  --text-color: #4a341b;
+  --text-heading: #372310;
+  --muted-color: #8c7355;
+  --accent-color: #d97706;
+  --accent-hover: #b45309;
+  --accent-light: rgba(245, 158, 11, 0.16);
+  --accent-gradient: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  --nav-active-bg: rgba(245, 158, 11, 0.18);
+  --nav-active-text: #b45309;
+  --nav-active-border: #f59e0b;
+  --card-shadow: 0 10px 30px -10px rgba(180, 83, 9, 0.14), 0 4px 12px rgba(0, 0, 0, 0.04);
+  --badge-bg: #fef3c7;
+  --badge-text: #92400e;
+  --flower-accent: #f59e0b;
+  --button-text: #ffffff;
+  --input-bg: rgba(255, 255, 255, 0.9);
+}
+
+/* 2. CALM ☁️ (Sea water, soothing turquoise, soft cream, sage) */
+.theme-calm {
+  --page-bg: #f0f7f9;
+  --bg-image: url('/calm-bg.jpeg');
+  --bg-overlay: rgba(240, 249, 252, 0.82);
+  --panel-bg: rgba(255, 255, 255, 0.86);
+  --panel-bg-hover: rgba(255, 255, 255, 0.96);
+  --panel-glass: rgba(245, 251, 253, 0.76);
+  --sidebar-bg: rgba(238, 248, 251, 0.86);
+  --border-color: rgba(45, 142, 168, 0.26);
+  --border-focus: #0ea5e9;
+  --text-color: #1a3c46;
+  --text-heading: #0f2b33;
+  --muted-color: #4f7480;
+  --accent-color: #0284c7;
+  --accent-hover: #0369a1;
+  --accent-light: rgba(2, 132, 199, 0.14);
+  --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+  --nav-active-bg: rgba(2, 132, 199, 0.15);
+  --nav-active-text: #0369a1;
+  --nav-active-border: #0284c7;
+  --card-shadow: 0 10px 30px -10px rgba(2, 132, 199, 0.12), 0 4px 12px rgba(0, 0, 0, 0.04);
+  --badge-bg: #e0f2fe;
+  --badge-text: #075985;
+  --flower-accent: #0284c7;
+  --button-text: #ffffff;
+  --input-bg: rgba(255, 255, 255, 0.9);
+}
+
+/* 3. ROMANTIC 🎀 (Blooming garden roses, blush pink, dusty rose, vintage poetry) */
+.theme-romantic {
+  --page-bg: #fcf4f7;
+  --bg-image: url('/romantic-bg.jpeg');
+  --bg-overlay: rgba(254, 244, 247, 0.84);
+  --panel-bg: rgba(255, 255, 255, 0.86);
+  --panel-bg-hover: rgba(255, 255, 255, 0.96);
+  --panel-glass: rgba(254, 246, 249, 0.76);
+  --sidebar-bg: rgba(253, 242, 246, 0.86);
+  --border-color: rgba(214, 114, 142, 0.28);
+  --border-focus: #db2777;
+  --text-color: #4a2130;
+  --text-heading: #361220;
+  --muted-color: #8c576b;
+  --accent-color: #be185d;
+  --accent-hover: #9d174d;
+  --accent-light: rgba(190, 24, 93, 0.14);
+  --accent-gradient: linear-gradient(135deg, #f472b6 0%, #be185d 100%);
+  --nav-active-bg: rgba(190, 24, 93, 0.15);
+  --nav-active-text: #9d174d;
+  --nav-active-border: #be185d;
+  --card-shadow: 0 10px 30px -10px rgba(190, 24, 93, 0.14), 0 4px 12px rgba(0, 0, 0, 0.04);
+  --badge-bg: #fce7f3;
+  --badge-text: #9d174d;
+  --flower-accent: #db2777;
+  --button-text: #ffffff;
+  --input-bg: rgba(255, 255, 255, 0.9);
+}
+
+/* 4. LOW-KEY 🌧️ (Moody dark clouds, rainy overcast ambiance, periwinkle) */
+.theme-low-key {
+  --page-bg: #f1f4f8;
+  --bg-image: url('/lowkey-bg.jpeg');
+  --bg-overlay: rgba(235, 241, 248, 0.82);
+  --panel-bg: rgba(255, 255, 255, 0.86);
+  --panel-bg-hover: rgba(255, 255, 255, 0.96);
+  --panel-glass: rgba(245, 248, 253, 0.76);
+  --sidebar-bg: rgba(235, 241, 249, 0.86);
+  --border-color: rgba(99, 126, 160, 0.28);
+  --border-focus: #475569;
+  --text-color: #1e293b;
+  --text-heading: #0f172a;
+  --muted-color: #64748b;
+  --accent-color: #334155;
+  --accent-hover: #1e293b;
+  --accent-light: rgba(51, 65, 85, 0.14);
+  --accent-gradient: linear-gradient(135deg, #64748b 0%, #334155 100%);
+  --nav-active-bg: rgba(51, 65, 85, 0.14);
+  --nav-active-text: #0f172a;
+  --nav-active-border: #334155;
+  --card-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.12), 0 4px 12px rgba(0, 0, 0, 0.04);
+  --badge-bg: #e2e8f0;
+  --badge-text: #1e293b;
+  --flower-accent: #475569;
+  --button-text: #ffffff;
+  --input-bg: rgba(255, 255, 255, 0.9);
+}
+
+/* 5. ENERGETIC ⚡ (Basketball, football, dumbbells, warm peach coral glow) */
+.theme-energetic {
+  --page-bg: #fdf5ef;
+  --bg-image: url('/energetic-bg.jpeg');
+  --bg-overlay: rgba(254, 246, 240, 0.84);
+  --panel-bg: rgba(255, 255, 255, 0.86);
+  --panel-bg-hover: rgba(255, 255, 255, 0.96);
+  --panel-glass: rgba(254, 247, 242, 0.76);
+  --sidebar-bg: rgba(254, 242, 233, 0.86);
+  --border-color: rgba(249, 115, 22, 0.3);
+  --border-focus: #ea580c;
+  --text-color: #4a2111;
+  --text-heading: #351408;
+  --muted-color: #8c533e;
+  --accent-color: #ea580c;
+  --accent-hover: #c2410c;
+  --accent-light: rgba(234, 88, 12, 0.14);
+  --accent-gradient: linear-gradient(135deg, #fb923c 0%, #ea580c 100%);
+  --nav-active-bg: rgba(234, 88, 12, 0.15);
+  --nav-active-text: #c2410c;
+  --nav-active-border: #ea580c;
+  --card-shadow: 0 10px 30px -10px rgba(234, 88, 12, 0.14), 0 4px 12px rgba(0, 0, 0, 0.04);
+  --badge-bg: #ffedd5;
+  --badge-text: #9a3412;
+  --flower-accent: #ea580c;
+  --button-text: #ffffff;
+  --input-bg: rgba(255, 255, 255, 0.9);
+}

@@ -1,0 +1,620 @@
+/* ==========================================================
+   VIBEVAULT — COMPONENTS STYLES (components.css)
+========================================================== */
+
+/* ---------------------------------------------------------
+   1. OPENING INTRO ANIMATION SCREEN
+--------------------------------------------------------- */
+.intro-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #23160e; /* Deep chocolate-brown */
+  color: #fcf7ef;
+  transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+  overflow: hidden;
+  animation: introBgTransition 3s forwards ease-in-out;
+}
+
+.intro-screen.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@keyframes introBgTransition {
+  0% {
+    background-color: #21150d;
+  }
+  65% {
+    background-color: #21150d;
+  }
+  85% {
+    background-color: #ede2d3;
+  }
+  100% {
+    background-color: #faf5ee;
+  }
+}
+
+.intro-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: introContentReveal 2.8s forwards cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes introContentReveal {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+    color: #fcf7ef;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+    color: #fcf7ef;
+  }
+  70% {
+    opacity: 1;
+    color: #fcf7ef;
+  }
+  85% {
+    color: #3b2518;
+  }
+  100% {
+    transform: translateY(-8px);
+    opacity: 0.95;
+    color: #2d1c12;
+  }
+}
+
+.intro-flower-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
+  transform: scale(0) rotate(-45deg);
+  animation: flowerBloom 1.8s 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes flowerBloom {
+  0% {
+    transform: scale(0) rotate(-45deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.25) rotate(10deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.intro-title {
+  font-family: var(--font-rounded);
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0;
+  display: inline-flex;
+  align-items: baseline;
+  position: relative;
+}
+
+.intro-tagline {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  margin-top: 14px;
+  font-weight: 600;
+  opacity: 0;
+  animation: introTaglineFade 2s 0.8s forwards ease;
+}
+
+@keyframes introTaglineFade {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 0.85;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------------------------------------------------
+   2. LOGO WITH FLOWER ABOVE DOTLESS "I"
+--------------------------------------------------------- */
+.brand-wordmark {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-rounded);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text-heading);
+  text-decoration: none;
+  user-select: none;
+}
+
+.brand-wordmark.sm { font-size: 1.35rem; }
+.brand-wordmark.md { font-size: 1.65rem; }
+.brand-wordmark.lg { font-size: 2.2rem; }
+
+.wordmark-container {
+  display: inline-flex;
+  align-items: baseline;
+  position: relative;
+}
+
+/* The dotless "ı" character with relative positioning for flower crown */
+.letter-i-wrapper {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.flower-crown {
+  position: absolute;
+  top: -0.42em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.65em;
+  height: 0.65em;
+  color: var(--flower-accent);
+  transition: transform 0.3s ease, color var(--transition-theme);
+}
+
+.brand-wordmark:hover .flower-crown {
+  transform: translateX(-50%) rotate(45deg) scale(1.15);
+}
+
+/* ---------------------------------------------------------
+   3. SIDEBAR NAVIGATION
+--------------------------------------------------------- */
+.sidebar {
+  width: 270px;
+  min-height: 100vh;
+  background: var(--sidebar-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  padding: 28px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background var(--transition-theme), border-color var(--transition-theme);
+}
+
+.sidebar-header {
+  padding-bottom: 24px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.sidebar-nav-title {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted-color);
+  font-weight: 700;
+  margin: 16px 12px 10px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 11px 16px;
+  border-radius: var(--radius-md);
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.94rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  border: 1px solid transparent;
+}
+
+.sidebar-link:hover {
+  background: rgba(255, 255, 255, 0.45);
+  color: var(--accent-color);
+  transform: translateX(3px);
+}
+
+.sidebar-link.active {
+  background: var(--nav-active-bg);
+  color: var(--nav-active-text);
+  font-weight: 600;
+  border-color: var(--border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.sidebar-link.active svg {
+  color: var(--accent-color);
+}
+
+.sidebar-bottom-note {
+  margin-top: auto;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  color: var(--muted-color);
+  line-height: 1.5;
+  font-style: italic;
+  position: relative;
+}
+
+.sidebar-bottom-note .note-flower {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 18px;
+  height: 18px;
+  color: var(--accent-color);
+}
+
+/* ---------------------------------------------------------
+   4. MAIN LAYOUT & HEADER
+--------------------------------------------------------- */
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 32px 40px;
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  gap: 20px;
+}
+
+.header-greeting-date {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted-color);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.header-title {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+.header-subtitle {
+  font-size: 0.95rem;
+  color: var(--muted-color);
+  margin-top: 4px;
+}
+
+.header-user-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.profile-avatar-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background: var(--panel-bg);
+  border: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--accent-color);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.profile-avatar-btn:hover {
+  transform: scale(1.05);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 4px var(--accent-light);
+}
+
+/* ---------------------------------------------------------
+   5. MOOD SELECTOR SECTION
+--------------------------------------------------------- */
+.mood-section {
+  margin-bottom: 36px;
+}
+
+.mood-section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.mood-section-title {
+  font-size: 1.35rem;
+  font-family: var(--font-editorial);
+  color: var(--text-heading);
+}
+
+.mood-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.mood-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 12px;
+  background: var(--panel-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: var(--card-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.mood-card:hover {
+  transform: translateY(-3px);
+  background: var(--panel-bg-hover);
+  border-color: var(--accent-color);
+}
+
+.mood-card.active {
+  background: var(--panel-bg-hover);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px var(--accent-light), var(--card-shadow);
+  transform: translateY(-2px);
+}
+
+.mood-card.active::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: var(--accent-color);
+}
+
+.mood-emoji {
+  font-size: 2rem;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.mood-card:hover .mood-emoji {
+  transform: scale(1.15) rotate(6deg);
+}
+
+.mood-name {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+.mood-subtitle {
+  font-size: 0.75rem;
+  color: var(--muted-color);
+}
+
+/* ---------------------------------------------------------
+   6. LIFESTYLE FEATURE CARDS
+--------------------------------------------------------- */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px;
+  min-height: 220px;
+  background: var(--panel-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--card-shadow);
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  background: var(--panel-bg-hover);
+  border-color: var(--accent-color);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.08), 0 0 0 1px var(--accent-light);
+}
+
+.feature-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.feature-icon-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-lg);
+  background: var(--accent-light);
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon-badge {
+  transform: scale(1.08) rotate(5deg);
+}
+
+.feature-card-title {
+  font-size: 1.5rem;
+  font-family: var(--font-editorial);
+  margin-bottom: 6px;
+  color: var(--text-heading);
+}
+
+.feature-card-desc {
+  font-size: 0.93rem;
+  color: var(--muted-color);
+  line-height: 1.5;
+}
+
+.feature-card-footer {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  transition: gap 0.2s ease;
+}
+
+.feature-card:hover .feature-cta {
+  gap: 12px;
+}
+
+/* ---------------------------------------------------------
+   7. FOOTER
+--------------------------------------------------------- */
+.app-footer {
+  margin-top: auto;
+  padding: 30px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px dashed var(--border-color);
+  font-size: 0.85rem;
+  color: var(--muted-color);
+}
+
+.app-footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* ---------------------------------------------------------
+   8. RESPONSIVE NAVIGATION & SCREENS
+--------------------------------------------------------- */
+@media (max-width: 992px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .mood-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main-wrapper {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    position: sticky;
+    top: 0;
+    padding: 12px 16px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .sidebar-header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .sidebar-nav-title, .sidebar-bottom-note {
+    display: none;
+  }
+
+  .sidebar-menu {
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  .sidebar-link span {
+    display: none;
+  }
+
+  .sidebar-link {
+    padding: 8px;
+  }
+
+  .mood-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-title {
+    font-size: 1.8rem;
+  }
+}
