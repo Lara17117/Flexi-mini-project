@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "6adf59b0e3d8f48e2ee25486",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "name": "Gentle Oat Cleansing Balm",
+    "brand": "Botanique Pure",
+    "category": "cleanser",
+    "instructions": "Massage onto dry skin to dissolve SPF and impurities, emulsify with warm water.",
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=80",
+    "createdAt": "2026-10-26T13:46:24.599Z",
+    "updatedAt": "2026-10-26T13:46:24.599Z",
+    "__v": 0
+  },
+  {
+    "_id": "6adf59b0e3d8f48e2ee25488",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "name": "Golden Glow Vitamin C & Hyaluronic Elixir",
+    "brand": "Aura Glow",
+    "category": "serum",
+    "instructions": "Press 4 drops gently onto damp face and neck every morning.",
+    "imageUrl": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80",
+    "createdAt": "2026-10-26T13:46:24.603Z",
+    "updatedAt": "2026-10-26T13:46:24.603Z",
+    "__v": 0
+  },
+  {
+    "_id": "6adf59b0e3d8f48e2ee2548a",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "name": "Dewy Dew Mineral Sunscreen SPF 50",
+    "brand": "Sol Garden",
+    "category": "sunscreen",
+    "instructions": "Generous two-finger application 15 minutes before stepping into sunshine.",
+    "imageUrl": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=500&q=80",
+    "createdAt": "2026-10-26T13:46:24.605Z",
+    "updatedAt": "2026-10-26T13:46:24.605Z",
+    "__v": 0
+  }
+]

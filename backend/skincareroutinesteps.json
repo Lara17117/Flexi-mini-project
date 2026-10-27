@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "6adf59b0e3d8f48e2ee2548c",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "productId": "6adf59b0e3d8f48e2ee25486",
+    "name": "Double Cleanse with Oat Balm",
+    "timeOfDay": "morning",
+    "order": 1,
+    "createdAt": "2026-10-26T13:46:24.612Z",
+    "updatedAt": "2026-10-26T13:46:24.612Z",
+    "__v": 0
+  },
+  {
+    "_id": "6adf59b0e3d8f48e2ee2548d",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "productId": "6adf59b0e3d8f48e2ee25488",
+    "name": "Apply Vitamin C Glow Elixir",
+    "timeOfDay": "morning",
+    "order": 2,
+    "createdAt": "2026-10-26T13:46:24.613Z",
+    "updatedAt": "2026-10-26T13:46:24.613Z",
+    "__v": 0
+  },
+  {
+    "_id": "6adf59b0e3d8f48e2ee2548e",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "productId": "6adf59b0e3d8f48e2ee2548a",
+    "name": "Protect with Dewy Sunscreen SPF 50",
+    "timeOfDay": "morning",
+    "order": 3,
+    "createdAt": "2026-10-26T13:46:24.613Z",
+    "updatedAt": "2026-10-26T13:46:24.613Z",
+    "__v": 0
+  },
+  {
+    "_id": "6adf59b0e3d8f48e2ee2548f",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "productId": "6adf59b0e3d8f48e2ee25486",
+    "name": "Evening Deep Clarifying Melt",
+    "timeOfDay": "evening",
+    "order": 1,
+    "createdAt": "2026-10-26T13:46:24.613Z",
+    "updatedAt": "2026-10-26T13:46:24.613Z",
+    "__v": 0
+  },
+  {
+    "_id": "6adf59b0e3d8f48e2ee25490",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "productId": null,
+    "name": "Nourishing Barrier Repair Sleep Mask",
+    "timeOfDay": "evening",
+    "order": 2,
+    "createdAt": "2026-10-26T13:46:24.613Z",
+    "updatedAt": "2026-10-26T13:46:24.613Z",
+    "__v": 0
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "_id": "6adf59b0e3d8f48e2ee25482",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "title": "Morning Sunbeams & Lavender Matcha",
+    "content": "Woke up before the alarm today. The golden morning light was painting soft amber squares across the kitchen floor. Sipped lavender iced matcha while writing three pages of gratitude.",
+    "imageUrl": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "morning ritual",
+      "matcha",
+      "peace"
+    ],
+    "entryDate": "2026-10-26T13:46:24.586Z",
+    "isFavorite": true,
+    "createdAt": "2026-10-26T13:46:24.590Z",
+    "updatedAt": "2026-10-26T13:46:24.590Z",
+    "__v": 0
+  },
+  {
+    "_id": "6adf59b0e3d8f48e2ee25483",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "title": "Farmers Market Yellow Blooms",
+    "content": "Picked up a bundle of baby sunflowers and golden chamomile. The whole studio smells like honey and summer earth. Pressed two little petals into my leather journal.",
+    "imageUrl": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "flowers",
+      "yellow",
+      "scrapbook"
+    ],
+    "entryDate": "2026-10-24T13:46:24.586Z",
+    "isFavorite": true,
+    "createdAt": "2026-10-26T13:46:24.590Z",
+    "updatedAt": "2026-10-26T13:46:24.590Z",
+    "__v": 0
+  }
+]

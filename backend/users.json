@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "6adf59b0e3d8f48e2ee25476",
+    "name": "Luna Skye",
+    "email": "luna@vibevault.app",
+    "passwordHash": "$2a$10$ETnST.6EaERV/TpElpknounwREDY9WTFZJbRcPbRT/EuAHDH4bgkG",
+    "preferredMood": "happy",
+    "createdAt": "2026-10-26T13:46:24.553Z",
+    "updatedAt": "2026-10-26T13:46:24.553Z",
+    "__v": 0
+  }
+]

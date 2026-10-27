@@ -1,0 +1,41 @@
+[
+  {
+    "_id": "6adf59b0e3d8f48e2ee25496",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "activityName": "Morning Sunshine Yoga Flow",
+    "activityType": "Yoga",
+    "durationMinutes": 25,
+    "notes": "Gentle heart openers and deep breathwork. Felt so open and present.",
+    "activityDate": "2026-10-26T13:46:24.618Z",
+    "completed": true,
+    "createdAt": "2026-10-26T13:46:24.620Z",
+    "updatedAt": "2026-10-26T13:46:24.620Z",
+    "__v": 0
+  },
+  {
+    "_id": "6adf59b0e3d8f48e2ee25498",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "activityName": "Full Body Sculpt Pilates",
+    "activityType": "Pilates",
+    "durationMinutes": 30,
+    "notes": "Core focus and slow controlled pulses. Loved the burn!",
+    "activityDate": "2026-10-24T13:46:24.618Z",
+    "completed": true,
+    "createdAt": "2026-10-26T13:46:24.620Z",
+    "updatedAt": "2026-10-26T13:46:24.620Z",
+    "__v": 0
+  },
+  {
+    "_id": "6adf59b0e3d8f48e2ee25497",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "activityName": "Brisk Meadow Walk & Podcast",
+    "activityType": "Walking",
+    "durationMinutes": 40,
+    "notes": "Breathed in crisp autumn air while listening to design lectures.",
+    "activityDate": "2026-10-25T13:46:24.618Z",
+    "completed": true,
+    "createdAt": "2026-10-26T13:46:24.620Z",
+    "updatedAt": "2026-10-26T13:46:24.620Z",
+    "__v": 0
+  }
+]

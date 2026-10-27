@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "6adf59b0e3d8f48e2ee2547a",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "name": "Honey Knit Cropped Cardigan",
+    "description": "Cozy butter-yellow handknit cardigan with tortoiseshell buttons.",
+    "category": "tops",
+    "color": "Butter Yellow",
+    "season": "all-season",
+    "occasion": "Café & Reading",
+    "imageUrl": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=700&q=80",
+    "isFavorite": true,
+    "createdAt": "2026-10-26T13:46:24.575Z",
+    "updatedAt": "2026-10-26T13:46:24.575Z",
+    "__v": 0
+  },
+  {
+    "_id": "6adf59b0e3d8f48e2ee2547c",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "name": "Oatmeal Pleated High-Waist Trousers",
+    "description": "Tailored drape trousers in soft brushed linen blend.",
+    "category": "bottoms",
+    "color": "Oatmeal",
+    "season": "fall",
+    "occasion": "Studio Work",
+    "imageUrl": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=700&q=80",
+    "isFavorite": false,
+    "createdAt": "2026-10-26T13:46:24.575Z",
+    "updatedAt": "2026-10-26T13:46:24.575Z",
+    "__v": 0
+  },
+  {
+    "_id": "6adf59b0e3d8f48e2ee2547b",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "name": "Sunflowered Linen Midi Dress",
+    "description": "Breezy cottagecore midi with gentle sweetheart neckline.",
+    "category": "dresses",
+    "color": "Ivory & Gold",
+    "season": "summer",
+    "occasion": "Picnic in the Park",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=700&q=80",
+    "isFavorite": true,
+    "createdAt": "2026-10-26T13:46:24.575Z",
+    "updatedAt": "2026-10-26T13:46:24.575Z",
+    "__v": 0
+  },
+  {
+    "_id": "6adf59b0e3d8f48e2ee2547d",
+    "userId": "6adf59b0e3d8f48e2ee25476",
+    "name": "Vintage Woven Leather Mary Janes",
+    "description": "Warm cognac woven leather flats with delicate brass buckles.",
+    "category": "footwear",
+    "color": "Cognac",
+    "season": "spring",
+    "occasion": "Weekend Stroll",
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80",
+    "isFavorite": true,
+    "createdAt": "2026-10-26T13:46:24.575Z",
+    "updatedAt": "2026-10-26T13:46:24.575Z",
+    "__v": 0
+  }
+]
